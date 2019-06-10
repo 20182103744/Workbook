@@ -1,0 +1,33 @@
+// ConsoleApplication1.cpp : �������̨Ӧ�ó������ڵ㡣
+//
+
+#include "stdafx.h"
+#include<iostream>
+using namespace std;
+class CBace {	
+public:
+	int a;
+	CBace() {
+		a = 0;
+	}
+	CBace(int c) {
+		a = c;
+	}
+	void display() {
+		cout << "a= " << a<<endl;
+	}
+};
+class Manager : public CBace {
+public:
+	Manager(int c) {
+		a = c;
+		cout << "����: " ;
+	}
+};
+int main()
+{
+	Manager obj(100);
+	//CBace obj(100);
+	obj.display();
+    return 0;
+}
